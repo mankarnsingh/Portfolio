@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" media="screen" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Accueil</title>
+</head>
+<body>
+
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="img/66423-517408349.mp4" type="video/mp4">
+    </video>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Mes Projets</a></li>
+            <li><a href="#contact">Contactez-moi</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="accueil" class="section hero-section">
+            <div class="hero-container">
+                <div class="hero-left">
+                    <img src="img/Logo.png" alt="Logo" class="hero-logo">
+                    <h1>SINGH Mankarn</h1>
+                    <h2>Étudiant en BUT Réseaux & Télécommunications</h2>
+                </div>
+
+                <div class="hero-right">
+                    <p>
+                        <center>
+                            Je suis étudiant en deuxième année de BUT Réseaux & Télécommunications.
+                            Issu d'un parcours général avec les spécialités Mathématiques et Numérique & Sciences Informatiques (NSI)
+                        </center>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="parcours" class="section parcours-section">
+            <div class="parcours-wrapper">
+                <div class="section-heading">
+                    <h2>Parcours</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item right">
+                        <div class="timeline-card">
+                            <span class="timeline-date">Objectif à Partir de 2026/2027</span>
+                            <h3>ESIEE Paris</h3>
+                            <p>
+                                <strong>ESIEE Paris</strong> est une école d'ingénieurs française située à la Cité Descartes, 
+                                sur le campus de Marne-la-Vallée.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-card highlight-card">
+                            <span class="timeline-date">20/04/2026 - 12/06/2026</span>
+                            <h3>Stage en Développement Web & Cybersécurité (Expert SEA)</h3>
+                            <p>
+                                Développement d'applications sécurisées, 
+                                montée en compétences sur React, Firebase et les API, analyse de logs et du trafic, 
+                                détection d'anomalies et participation à la protection des comptes clients.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-card">
+                            <span class="timeline-date">2024 - 2026</span>
+                            <h3>BUT Réseaux & Télécommunications</h3>
+                            <p>
+                                Formation suivie à l'<strong>Université Sorbonne Paris Nord</strong>,
+                                avec une montée en compétences en administration systèmes,
+                                réseaux, virtualisation et sécurité informatique.
+                            </p>
+                        </div>
+                    </div>  
+
+                    <div class="timeline-item left">
+                        <div class="timeline-card">
+                            <span class="timeline-date">2024</span>
+                            <h3>Baccalauréat Général</h3>
+                            <p>
+                                Obtention du baccalauréat avec la mention <strong>Assez Bien</strong>,
+                                avec les spécialités <strong>Mathématiques</strong>, <strong>NSI</strong>
+                                et <strong>Physique-Chimie</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== COMPÉTENCES ===== -->
+        <section id="competences" class="section comp-section">
+            <div class="comp-wrapper">
+                <div class="section-heading">
+                    <h2>Compétences</h2>
+                    <p>Acquises au fil de mon BUT R&T — réseaux, programmation, cybersécurité et télécommunications.</p>
+                </div>
+
+                <!-- CATÉGORIE 1 : Réseaux & Administration -->
+                <div class="comp-category" data-open="true">
+                    <button class="comp-cat-header" onclick="toggleCategory(this)">
+                        <div class="comp-cat-left">
+                            <span class="comp-cat-icon">🌐</span>
+                            <span class="comp-cat-title">Réseaux & Administration Système</span>
+                        </div>
+                        <svg class="comp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="comp-cat-body">
+                        <div class="comp-grid">
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Fondamentaux</span>
+                                    <h4>Adressage IP & Routage</h4>
+                                </div>
+                                <p>Configuration du routage statique, planification d'adresses IPv4 et IPv6, gestion des interfaces réseau et sous-réseaux. Appris en R101, R102 et R201.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">LAN</span>
+                                    <h4>VLAN & Commutation</h4>
+                                </div>
+                                <p>Mise en place de VLAN, routage inter-VLAN, sécurité de niveau 2 et détection d'attaques MAC spoofing. Pratiqué en R103.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Linux</span>
+                                    <h4>Administration Système</h4>
+                                </div>
+                                <p>Gestion des utilisateurs, processus, scripts shell, variables d'environnement et installation de machines virtuelles sous Debian/Linux. Modules R108, R202.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Services</span>
+                                    <h4>Services Réseau (DNS, DHCP, Mail)</h4>
+                                </div>
+                                <p>Déploiement de serveurs DNS (Bind9), DHCP, Postfix (SMTP), Dovecot (IMAP/POP3), NAT avec iptables, et analyse de trafic Wireshark. Module R203, R3.03.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Automatisation</span>
+                                    <h4>Scripts Bash & Automatisation</h4>
+                                </div>
+                                <p>Création de scripts Bash avec conditions, boucles, redirections, pipes, cron, scp/rsync pour les sauvegardes et gestion des services système.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Réseaux cellulaires</span>
+                                    <h4>Planification Radio & GSM/UMTS</h4>
+                                </div>
+                                <p>Simulation de réseaux cellulaires avec Radio Mobile, étude de couverture, gestion des fréquences, modèle Longley-Rice. Module R4.04.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATÉGORIE 2 : Cybersécurité -->
+                <div class="comp-category">
+                    <button class="comp-cat-header" onclick="toggleCategory(this)">
+                        <div class="comp-cat-left">
+                            <span class="comp-cat-icon">🔐</span>
+                            <span class="comp-cat-title">Cybersécurité</span>
+                        </div>
+                        <svg class="comp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="comp-cat-body" style="display:none">
+                        <div class="comp-grid">
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Firewall</span>
+                                    <h4>Pare-feu & Filtrage</h4>
+                                </div>
+                                <p>Configuration de règles iptables (filter, nat), SNAT/DNAT, redirection de ports, mise en place de DMZ et politiques de filtrage réseau. Module R4.01.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">VPN</span>
+                                    <h4>Tunnels VPN</h4>
+                                </div>
+                                <p>Configuration d'OpenVPN niveau 2 et niveau 3, segmentation réseau via tunnels chiffrés, gestion des certificats RSA avec OpenSSL.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">IDS/IPS</span>
+                                    <h4>Détection d'Intrusions</h4>
+                                </div>
+                                <p>Utilisation de Snort pour la détection d'intrusions, fail2ban pour le blocage automatique, corrélation IDS/IPS, analyse des logs système (/var/log).</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Cryptographie</span>
+                                    <h4>Cryptographie & Chiffrement</h4>
+                                </div>
+                                <p>Implémentation de RSA, Diffie-Hellman, signature numérique en Python. Arithmétique modulaire, attaques par fréquence/force brute, bases de la cryptographie quantique. Module R4.10.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">BDD Sécurisée</span>
+                                    <h4>Sécurité des Bases de Données</h4>
+                                </div>
+                                <p>Prévention des injections SQL, requêtes paramétrées, gestion des rôles et privilèges PostgreSQL, analyse de vulnérabilités. Module R3.10.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATÉGORIE 3 : Programmation -->
+                <div class="comp-category">
+                    <button class="comp-cat-header" onclick="toggleCategory(this)">
+                        <div class="comp-cat-left">
+                            <span class="comp-cat-icon">💻</span>
+                            <span class="comp-cat-title">Programmation</span>
+                        </div>
+                        <svg class="comp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="comp-cat-body" style="display:none">
+                        <div class="comp-grid">
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Python</span>
+                                    <h4>Python</h4>
+                                </div>
+                                <p>Langage principal tout au long du cursus : scripts d'automatisation, POO (classes, héritage, UML), algorithmes de graphes (BFS/DFS), gestion de fichiers JSON, requêtes SQL via psycopg2, chiffrement RSA, threading et envoi de mails automatisé.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Programmation Concurrente</span>
+                                    <h4>Threads & Concurrence</h4>
+                                </div>
+                                <p>Module threading Python : création de threads, synchronisation (Lock, join), files bornées, modèles producteur/consommateur, simulation d'un switch Ethernet (couche 2). Module R3.09.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Web</span>
+                                    <h4>Développement Web</h4>
+                                </div>
+                                <p>HTML/CSS sémantique (R109), PHP côté serveur avec bases de données (R209), développement d'un portfolio web complet. Stage : React, Firebase et intégrations API.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Bases de données</span>
+                                    <h4>SQL & PostgreSQL</h4>
+                                </div>
+                                <p>Conception de schémas relationnels, requêtes SELECT/INSERT/UPDATE/DELETE, jointures, gestion des rôles et droits, administration via psql sous Linux. Modules R207, R3.10.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Simulation</span>
+                                    <h4>Matlab & Simulation</h4>
+                                </div>
+                                <p>Simulation de systèmes de transmission sous Matlab : FFT/iFFT, génération de signaux, analyse temporelle et fréquentielle, implémentation OFDM et CDMA. Module R4.02.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATÉGORIE 4 : Télécommunications & Signal -->
+                <div class="comp-category">
+                    <button class="comp-cat-header">
+                        <div class="comp-cat-left">
+                            <span class="comp-cat-icon">📡</span>
+                            <span class="comp-cat-title">Télécommunications & Traitement du Signal</span>
+                        </div>
+                        <svg class="comp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="comp-cat-body" style="display:none">
+                        <div class="comp-grid">
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Signal</span>
+                                    <h4>Traitement du Signal</h4>
+                                </div>
+                                <p>Série de Fourier, filtres RC/RLC, conversion analogique-numérique, aliasing, analyse de spectres de signaux échantillonnés. Modules R205, R206.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Modulations</span>
+                                    <h4>Chaînes de Transmission Numérique</h4>
+                                </div>
+                                <p>Codages NRZ, RZ, AMI, Manchester, modulations ASK/PSK/QAM/OFDM/CDMA, diagramme de l'œil, constellations IQ, rapport signal/bruit. Modules R3.05, R4.02.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Ondes EM</span>
+                                    <h4>Ondes & Électromagnétisme</h4>
+                                </div>
+                                <p>Propagation des ondes en 1D/2D/3D, réflexion, interférences (Young), équations de Maxwell, vecteur de Poynting, modélisation mathématique d'ondes planes harmoniques.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">RF</span>
+                                    <h4>Physique des Télécoms & Lignes RF</h4>
+                                </div>
+                                <p>Coefficient de réflexion (Γ), paramètres S (S11), ROS, abaque de Smith, adaptation d'impédance (stub, quart d'onde), caractérisation d'antennes (dipôle, Yagi). Module R4.03.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATÉGORIE 5 : Fibre Optique -->
+                <div class="comp-category">
+                    <button class="comp-cat-header" onclick="toggleCategory(this)">
+                        <div class="comp-cat-left">
+                            <span class="comp-cat-icon">🔦</span>
+                            <span class="comp-cat-title">Fibre Optique & Réseaux d'Accès</span>
+                        </div>
+                        <svg class="comp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="comp-cat-body" style="display:none">
+                        <div class="comp-grid">
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Mesures</span>
+                                    <h4>Mesures Optiques & OTDR</h4>
+                                </div>
+                                <p>Mesures de puissance (dBm), atténuation linéique, utilisation d'un OTDR pour localiser les défauts (connecteurs, soudures, micro-courbures), analyse de réflectogrammes.</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Raccordement</span>
+                                    <h4>Soudure & Installation Fibre</h4>
+                                </div>
+                                <p>Dénudage, clivage, soudure par fusion, installation de pigtail, qualité de soudure (< 0,1 dB), organisation d'infrastructure FTTH (boîtier d'étage, BPI, PTO).</p>
+                            </div>
+
+                            <div class="comp-card">
+                                <div class="comp-card-header">
+                                    <span class="comp-badge">Architecture</span>
+                                    <h4>Réseaux d'Accès Optiques</h4>
+                                </div>
+                                <p>Architectures FTTH, P2P, PON/GPON, identification des éléments (NRO, coupleurs, PTO), manipulation de composants optiques passifs, recette de liaison optique. Module R3.07.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projets" class="section placeholder-section">
+            <div class="placeholder-content">Mes Projets</div>
+        </section>
+
+        <section id="contact" class="section placeholder-section">
+            <div class="placeholder-content">Contactez-moi</div>
+        </section>
+    </main>
+
+</body>
+</html>
